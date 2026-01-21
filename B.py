@@ -316,53 +316,70 @@
 # print(student.__salary)
 
 
-class cecosuni:
-    def __init__(self):
-        self.name = "abc"
-        self.id = 123
-        self.address = "abc"
-        self.CNIC = 123
-        self.contact = 345
-    def setdata(self):
-        self.name = input("Name ")
-        self.id = int(input("ID "))
-        self.address = input("Address ")
-        self.CNIC = int(input("CNIC "))
-        self.contact = int(input("Con num "))
+# class cecosuni:
+#     def __init__(self):
+#         self.name = "abc"
+#         self.id = 123
+#         self.address = "abc"
+#         self.CNIC = 123
+#         self.contact = 345
+#     def setdata(self):
+#         self.name = input("Name ")
+#         self.id = int(input("ID "))
+#         self.address = input("Address ")
+#         self.CNIC = int(input("CNIC "))
+#         self.contact = int(input("Con num "))
 
-class student(cecosuni):
-    def __init__(self):
-        self.department  = "SE"
-        self.section  = "A"
-    def setstudent_data(self):
-        self.setdata()
-        self.department  = input("department ")
-        self.section  = input("section ")
-    def display(self):
-        print(f"ID {self.id} Name {self.name} Address {self.address} CNIC {self.CNIC} Contact Number {self.contact} Department {self.department} Section {self.section}")
+# class student(cecosuni):
+#     def __init__(self):
+#         self.department  = "SE"
+#         self.section  = "A"
+#     def setstudent_data(self):
+#         self.setdata()
+#         self.department  = input("department ")
+#         self.section  = input("section ")
+#     def display(self):
+#         print(f"ID {self.id} Name {self.name} Address {self.address} CNIC {self.CNIC} Contact Number {self.contact} Department {self.department} Section {self.section}")
 
-class faculty:
-    def __init__(self):
-        self.designation = "lecturer"
-    def fac(self):
-        # self.setstudent_data()
-        self.designation  = input(" Designation ")
-    def display1(self):
-        print(f"ID {self.id} Name {self.name} Address {self.address} CNIC {self.CNIC} Contact Number {self.contact} Department {self.department} Section {self.section} designation {self.designation}")
+# class faculty:
+#     def __init__(self):
+#         self.designation = "lecturer"
+#     def fac(self):
+#         # self.setstudent_data()
+#         self.designation  = input(" Designation ")
+#     def display1(self):
+#         print(f"ID {self.id} Name {self.name} Address {self.address} CNIC {self.CNIC} Contact Number {self.contact} Department {self.department} Section {self.section} designation {self.designation}")
 
 
-class admin(cecosuni, faculty):
-    def setadmin(self):
-        self.setdata()
-        self.fac()
-    def display2(self):
-        print(self.designation)
-# st1  =student()
-# st1.setstudent_data()
-# st1.display()
-# fac1  =faculty()
-# fac1.fac()
-# fac1.display1()
-ad  =admin()
-ad.setadmin()
-ad.display2()
+# class admin(cecosuni, faculty):
+#     def setadmin(self):
+#         self.setdata()
+#         self.fac()
+#     def display2(self):
+#         print(self.designation)
+# # st1  =student()
+# # st1.setstudent_data()
+# # st1.display()
+# # fac1  =faculty()
+# # fac1.fac()
+# # fac1.display1()
+# ad  =admin()
+# ad.setadmin()
+# ad.display2()
+
+list1  =[1,2,3]
+naem ="arham"
+
+print(len(list1))
+print(len(naem))
+
+class student:
+    def marks(self, sub1, sub2):
+        self.sub1 = sub1
+        self.sub2 = sub2
+        print(self.sub1 + self.sub2)
+        print("Hello world")
+
+st1 =student()
+st1.marks(12,45)
+st1.marks(10.5, 23.2)
